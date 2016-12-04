@@ -1,7 +1,23 @@
 
 
-.page-header, .page-footer
+.main-content
+  order: 2
+  flex: 5
+  background-color: $middlePanelBackgroundColor
 
-  background-color: $headerBackgroundColor
+.left-side, .right-side
+  flex: 1
+  background-color: $sidePanelBackgroundColor
 
-  &__title
+.left-side
+  order: 1
+
+.right-side
+  order: 3
+
+
+.page-title
+  text-align: center
+
+.copyright-notice
+  text-align: center

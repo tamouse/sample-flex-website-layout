@@ -1,0 +1,21 @@
+{
+  "name": "sample-flex-website-layout",
+  "version": "0.1.0",
+  "description": "A sample flex website layout with full-height columns",
+  "main": "index.js",
+  "repository": "git@github.com:tamouse/sample-flex-website-layout.git",
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "concurrently": "^3.1.0",
+    "node-sass": "^3.13.0"
+  },
+  "scripts": {
+    "build-css": "node-sass -r stylesheets -o stylesheets",
+    "watch-css": "npm run build-css && node-sass -w -r stylesheets -o stylesheets",
+    "serve": "browser-sync start --server --files index.html stylesheets/index.css",
+    "start": "concurrently -r \"npm run watch-css\" \"npm run serve\" ",
+    "test": "echo \"we don need no steeeking tests\""
+  }
+}
