@@ -1,0 +1,15 @@
+{
+  "name": "sample-flex-website-layout",
+  "version": "0.1.0",
+  "description": "A sample flex website layout with full-height columns",
+  "main": "index.js",
+  "repository": "git@github.com:tamouse/sample-flex-website-layout.git",
+  "author": "Tamara Temple <tamouse@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.18.2",
+    "gulp": "^3.9.1",
+    "gulp-plumber": "^1.1.0",
+    "node-sass": "^3.13.0"
+  }
+}
