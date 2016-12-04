@@ -1,54 +1,32 @@
 
-
-.segments
-  align-content: center
-  align-items: stretch
+.panels
   display: flex
-  flex-flow: column nowrap
+  overflow: hidden
   position: absolute
-  height: 100%
+  top: $boundaryHeight
+  bottom: $boundaryHeight
+
+  .panel
+    // flex: 1
+    padding: 1em 2em
+    overflow: auto
+
+.page-boundary
+  background-color: $headerBackgroundColor
+  position: absolute
+  height: $boundaryHeight
+  display: flex
+  justify-content: center
+  align-content: center
+  align-items: center
   width: 100%
 
-.segment
-  align-items: stretch
-  align-content: center
-  display: flex
-  flex: 1 100%
-  flex-direction: column
 
-.top-segment
-  flex: 3
+  &__item
+    flex: 1 1 100%
+    padding: 0 2em
 
-.main-segment
-  flex: 9
-
-.bottom-segment
-  flex: 1
-
-
-.panels
-  align-content   : center
-  align-items     : stretch
-  animation       : slide 0.75s 1
-  display         : flex
-  flex-flow       : column nowrap
-  justify-content : space-between
-
-  @media all and (min-width : 640px)
-    flex-flow : row nowrap
-
-.panel
-  align-items     : center
-  display         : flex
-  flex            : 1 100%
-  flex-direction  : column
-  justify-content : center
-  transition      : flex 0.3s
-
-  @media all and (min-width: 640px)
-    max-width: (100% / 5)
-
-.panel-center
-  flex            : 3 100%
-  @media all and (min-width: 640px)
-    min-width: 100% / 5 * 3
+  &--fixed-top
+    top: 0
+  &--fixed-bottom
+    bottom: 0

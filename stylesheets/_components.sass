@@ -1,14 +1,23 @@
 
 
-.page-header, .page-footer
-  background-color: $headerBackgroundColor
-  padding: 1em
-
-  &__title, &__copyright
-    text-align: center
+.main-content
+  order: 2
+  flex: 5
+  background-color: $middlePanelBackgroundColor
 
 .left-side, .right-side
+  flex: 1
   background-color: $sidePanelBackgroundColor
 
-.main-content
-  background-color: $middlePanelBackgroundColor
+.left-side
+  order: 1
+
+.right-side
+  order: 3
+
+
+.page-title
+  text-align: center
+
+.copyright-notice
+  text-align: center

@@ -13,6 +13,17 @@ h1, h2, h3, h4, h5, h6
   font-size: $headingFontSize
   line-height: $headingLineHeight
 
+@for $i from 2 through 6
+  h#{$i}
+    $headingXFontSize: ($headingFontSize - ($i / 10))
+    font-size: $headingXFontSize
+    line-height: $headingXFontSize
+
+p
+  margin-top: 0.5em
+  &:first-line
+    margin-left: 0.5em
+
 a
   color: inherit  // make links inherit the parent element's color (cool!)
 

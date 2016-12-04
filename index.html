@@ -7,33 +7,42 @@
     <title>Flex Standard Layout</title>
     <link rel="stylesheet" href="stylesheets/index.css">
 </head>
-<body class="segments">
-<header class="page-header segment top-segment">
-    <h1 class="page-header__title">This is the page header!</h1>
-</header>
-
-<div class="segment main-segment">
-    <div class=" panels">
-        <aside class="left-side panel">
-            <header class="left-side__header">
-                <h2 class="left-side__header-title">Left Side</h2>
-            </header>
-        </aside>
-        <main class="main-content panel panel-center" role="main">
-            <header class="main-content__header">
-                <h2 class="main-content__header-title">Main Content</h2>
-            </header>
-        </main>
-        <aside class="right-side panel">
-            <header class="right-side__header">
-                <h2 class="right-side__header-title">Right Side</h2>
-            </header>
-        </aside>
-    </div>
+<body>
+<div class="panels">
+    <main class="panel main-content " role="main">
+        <header class="main-content__header">
+            <h2 class="main-content__header-title">Main Content</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab adipisci aliquam architecto at aut consectetur, cupiditate distinctio eligendi explicabo incidunt ipsa iste, maiores nulla obcaecati officia repellendus sapiente vitae voluptas?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, asperiores at cupiditate dolorem dolorum esse facere labore necessitatibus nostrum obcaecati optio quidem, quo rerum sint unde ut, voluptate? Eos, ullam.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos eaque exercitationem, minus officia recusandae similique tempora vitae voluptatum! Accusamus beatae corporis deleniti dolores, error maxime quidem recusandae rem repudiandae voluptas!</p>
+        <p>
+            <img src="http://placekitten.com/g/600/400" alt="just a little kitten picture">
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet deserunt incidunt quos reprehenderit vel voluptates! Aspernatur commodi, dolore error eum iusto nobis praesentium quos voluptatum. Aperiam explicabo quisquam velit vero?
+        </p>
+    </main>
+    <aside class="left-side panel">
+        <header class="left-side__header">
+            <h2 class="left-side__header-title">Left Side</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam, commodi dolores eligendi est facere natus nesciunt, nihil nobis nostrum numquam praesentium quas qui quibusdam sint tenetur totam voluptas!</p>
+    </aside>
+    <aside class="right-side panel">
+        <header class="right-side__header">
+            <h2 class="right-side__header-title">Right Side</h2>
+        </header>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi dolorem eos impedit ipsa quidem? Asperiores at consequuntur cumque, exercitationem hic, illo iste laudantium officia omnis quibusdam tempora vel. Doloribus?</p>
+    </aside>
 </div>
 
-<footer class="page-footer segment bottom-segment">
-    <div class="page-footer__copyright">
+<header class="page-boundary page-boundary--fixed-top">
+    <h1 class="page-boundary__item page-title">This is the page header!</h1>
+</header>
+
+<footer class="page-boundary page-boundary--fixed-bottom">
+    <div class="page-boundary__item copyright-notice">
         Copyright &copy; 2016 Pontiki Software Crafts
     </div>
 </footer>
