@@ -8,8 +8,14 @@
   "license": "MIT",
   "devDependencies": {
     "browser-sync": "^2.18.2",
-    "gulp": "^3.9.1",
-    "gulp-plumber": "^1.1.0",
+    "concurrently": "^3.1.0",
     "node-sass": "^3.13.0"
+  },
+  "scripts": {
+    "build-css": "node-sass -r stylesheets -o stylesheets",
+    "watch-css": "npm run build-css && node-sass -w -r stylesheets -o stylesheets",
+    "serve": "browser-sync start --server --files index.html stylesheets/index.css",
+    "start": "concurrently -r \"npm run watch-css\" \"npm run serve\" ",
+    "test": "echo \"we don need no steeeking tests\""
   }
 }
