@@ -59,3 +59,4 @@ Following ideas on
 [Demo](https://tamouse.github.io/sample-flex-website-layout/)
 
 
+*Now with more responsive!*
